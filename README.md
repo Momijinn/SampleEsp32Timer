@@ -1,7 +1,16 @@
-# SampleEsp32Timer
+SampleEsp32Timer
+====
 ESP32で使用するTimerサンプルプログラム
 
-## 解説
+## Description
+ESP32のTimer割り込みを使うときに自己的な解釈でまとめたサンプルプログラム
+
+## Requirement
+Arduino上でESP32を書き込めるようにしておく
+
+http://www.autumn-color.com/archives/673
+
+## Usage
 ESP32はTimer割り込みをするときにセマフォ管理をしなければなりません
 
 またプリスケーラの設定も必要です
@@ -14,11 +23,13 @@ timerAlarmWrite()にてタイマーの設定をしています
 
 timerAlarmEnable()にてタイマーをスタートさせています
 
+## Install
+SampleEsp32Timer.inoをESP32へ書き込む
 
+## Licence
+This software is released under the MIT License, see LICENSE.
 
-より深く知りたい人はexampleを参考にしてみてください
+## Author
+[Twitter](https://twitter.com/momijinn_aka)
 
-スケッチの例 -> ESP32 -> Timer -> RepeatTimer です
-
-## Blog
-[AutumnColor.com](http://www.autumn-color.com/)
+[Blog](http://www.autumn-color.com/)
